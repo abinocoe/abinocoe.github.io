@@ -27,7 +27,7 @@ const bower            = mainBowerFiles({
 });
 
 const src  = "src";
-const dist = "public";
+const dist = ".";
 
 // bower
 gulp.task('bower', [
