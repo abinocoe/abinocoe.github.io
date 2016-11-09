@@ -1,0 +1,80 @@
+@import 'bower';
+@import 'variables';
+@import 'type';
+@import 'nav';
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+#hero {
+  :first-child {
+    margin-top: 50px;
+  }
+  .knockout-text {
+    margin-right: 20px;
+  }
+}
+
+#portfolio {
+  .row {
+    padding-top: 50px;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.imgWrap {
+  position: relative;
+  max-width: 100%;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#about {
+  p {
+    text-align: center;
+  }
+  img {
+    height: 40%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  ul {
+    text-align: center;
+    list-style: none;
+    li {
+      display: inline-block;
+      padding: 0 10px;
+      i {
+        color: $accent;
+      }
+    }
+  }
+}

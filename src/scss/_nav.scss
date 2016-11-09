@@ -1,0 +1,28 @@
+nav {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background: black;
+  color: #fff;
+  margin: 0;
+  padding: none;
+    a {
+      color: #fff;
+      font-family: $mainFont;
+      letter-spacing: 2px;
+      line-height: 50px;
+    }
+    a:hover {
+      color: $accent;
+    }
+    .title {
+      margin-left: 10px;
+    }
+    .links {
+      a {
+        margin-right: 10px;
+      }
+    }
+}
