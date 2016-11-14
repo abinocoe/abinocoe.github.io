@@ -2,56 +2,77 @@
 <html ng-app="abigail">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Abigail Coe</title>
   <script src="https://use.fontawesome.com/f3503f439d.js"></script>
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/app.js" charset="utf-8"></script>
 </head>
 <body>
-    <nav>
+  <nav>
     <a class="title" du-smooth-scroll="hero" du-scrollspy offset="50">Web developer</a>
     <span class="links u-pull-right">
-    <a du-smooth-scroll="portfolio" du-scrollspy offset="50">Portfolio</a>
-    <a du-smooth-scroll="about" du-scrollspy offset="50">About</a>
-  </span>
-    </nav>
+      <a du-smooth-scroll="portfolio" du-scrollspy offset="50">Portfolio</a>
+      <a du-smooth-scroll="about" du-scrollspy offset="50">About</a>
+    </span>
+  </nav>
   <section id="hero">
     <h1 class="knockout-text">Abigail</h1>
     <h1 class="knockout-text">Coe</h1>
   </section>
   <section id="portfolio">
     <div class="row" id="top">
-      <div class="three columns offset-by-three">
-        <img src="/img/litup.png" alt="" />
-        <p>
-          first project JavaScript game built with jQuery & oop
-        </p>
+      <div class="four columns offset-by-two wrap">
+        <a class="wrapper"></a>
+        <img class="nine columns" src="/img/litup.png" alt="" />
+        <p class="title">JavaScript game</p>
       </div>
-      <div class="three columns">
-        <img src="/img/pleasure.png" alt="" />
+      <div class="four columns">
+        <img class="nine columns" src="/img/pleasure.png" alt="" />
+        <p>Google Maps API and web scraping</p>
       </div>
     </div>
     <div class="row">
-      <div class="three columns offset-by-three">
-        <img src="/img/swish.png" alt="" />
-
+      <div class="four columns offset-by-two">
+        <img class="nine columns" src="/img/swish.png" alt="" />
+        <p>MEAN stack clothes swapping app</p>
       </div>
-      <div class="three columns">
-        <img src="/img/whatsupp.png" alt="" />
+      <div class="four columns">
+        <img class="nine columns" src="/img/whatsupp.png" alt="" />
+        <p>Whatsapp Sentiment Analysis app</p>
+        <a href="https://github.com/abinocoe/wdi-project-4">View Code</a>
       </div>
     </div>
   </section>
   <section id="about">
-    <p>
-      I'm a London based full-stack developer
-    </p>
-    <img src="/img/portrait.jpg" alt="" />
-    <ul>
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+        <img src="/img/portrait.jpg" alt="" />
+        </div>
+        <div class="six columns">
+        <h5>Key Points:</h5>
+        <ul>
+          <li>Mad crazy about JavaScript and Mariage Freres tea</li>
+          <li>Can be bribed with jelly</li>
+          <li>Preferred architectural style: High Victorian Neo Gothic</li>
+          <li>Still devastated that Gravity Falls is only two seasons long</li>
+          <li>Open to chats or cat gifs at the links below</li>
+        </ul>
+        <p>
+          <b>Currently reading: Dave Eggers' The Circle</b>
+        </p>
+      </div>
+      </div>
+    </div>
+    <footer>
+    <ul class="four columns offset-by-four" id="contact">
       <li><a href="https://github.com/abinocoe"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/abinocoe"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
       <li><a href="https://www.linkedin.com/in/abigailcoe"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
       <li><a href="mailto:abigailcoe@gmail.com"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a></li>
     </ul>
+    </footer>
   </section>
 </body>
 </html>
