@@ -1,115 +1,154 @@
 <!DOCTYPE html>
 <html ng-app="abigail">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  <title>Abigail Coe</title>
-  <script src="https://use.fontawesome.com/f3503f439d.js"></script>
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/app.js" charset="utf-8"></script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Abigail Coe</title>
+    <script src="https://use.fontawesome.com/f3503f439d.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/app.js" charset="utf-8"></script>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-  ga('create', 'UA-93043668-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
-</head>
-<body>
-  <div class="wrapper">
-    <nav>
-      <a class="title" du-smooth-scroll="hero" du-scrollspy offset="50">Web developer</a>
-      <span class="links u-pull-right">
-        <a du-smooth-scroll="about" du-scrollspy offset="50">About</a>
-        <a du-smooth-scroll="portfolio" du-scrollspy offset="50">Portfolio</a>
-      </span>
-    </nav>
-    <section id="hero">
-      <h1 class="knockout-text">Abigail</h1>
-      <h1 class="knockout-text">Coe</h1>
-    </section>
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="six columns">
-            <img src="/img/portrait.jpg" alt="Abigail Coe's face" />
+      ga("create", "UA-93043668-1", "auto");
+      ga("send", "pageview");
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <a class="title" du-smooth-scroll="hero" du-scrollspy offset="50"
+          >Web developer</a
+        >
+        <span class="links u-pull-right">
+          <a du-smooth-scroll="about" du-scrollspy offset="50">About</a>
+          <a du-smooth-scroll="portfolio" du-scrollspy offset="50">Portfolio</a>
+        </span>
+      </nav>
+      <section id="hero">
+        <h1 class="knockout-text">Abigail</h1>
+        <h1 class="knockout-text">Coe</h1>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="six columns">
+              <img src="/img/portrait.jpg" alt="Abigail Coe's face" />
+            </div>
+            <div class="six columns">
+              <h4>Key Points:</h4>
+              <ul>
+                <li>Mad crazy about JavaScript and Mariage Frères tea</li>
+                <li>London based</li>
+                <li>Can be bribed with jelly</li>
+                <li>
+                  Preferred architectural style: High Victorian Neo Gothic
+                </li>
+                <li>
+                  Still devastated that Gravity Falls is only two seasons long
+                </li>
+                <li>"Exemplary Vocab"</li>
+                <li>Open to chats or cat gifs at the links below</li>
+              </ul>
+              <p>
+                <b
+                  >Currently reading:<br />Doris Lessing's The Golden
+                  Notebook</b
+                >
+              </p>
+            </div>
           </div>
-          <div class="six columns">
-            <h4>Key Points:</h4>
-            <ul>
-              <li>Mad crazy about JavaScript and Mariage Frères tea</li>
-              <li>London based</li>
-              <li>Can be bribed with jelly</li>
-              <li>Preferred architectural style: High Victorian Neo Gothic</li>
-              <li>Still devastated that Gravity Falls is only two seasons long</li>
-              <li>"Exemplary Vocab"</li>
-              <li>Open to chats or cat gifs at the links below</li>
-            </ul>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="row" id="top">
+          <div class="four columns offset-by-two wrap">
+            <a href="https://damp-retreat-26421.herokuapp.com/">
+              <img src="/img/litup.png" alt="" />
+            </a>
             <p>
-              <b>Currently reading:<br />Raymond Chandler's The Big Sleep</b>
+              jQuery and OOP game
+              <br />
+              <a href="https://github.com/abinocoe/wdi-project-1">Code</a>
+            </p>
+          </div>
+          <div class="four columns">
+            <a href="http://frozen-cliffs-13270.herokuapp.com/">
+              <img src="/img/pleasure.png" alt="" />
+            </a>
+            <p>
+              Google Maps API and web scraping
+              <br />
+              <a href="https://github.com/abinocoe/wdi-project-2">Code</a>
             </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="portfolio">
-      <div class="row" id="top">
-        <div class="four columns offset-by-two wrap">
-          <a href="https://damp-retreat-26421.herokuapp.com/">
-            <img src="/img/litup.png" alt="" />
-          </a>
-          <p>
-            jQuery and OOP game
-            <br />
-            <a href="https://github.com/abinocoe/wdi-project-1">Code</a>
-          </p>
+        <div class="row">
+          <div class="four columns offset-by-two">
+            <a href="https://swishlist-cjbrunnen.herokuapp.com/">
+              <img src="/img/swish.png" alt="" />
+            </a>
+            <p>
+              MEAN stack clothes swapping app
+              <br />
+              <a href="https://github.com/cjbrunnen/wdi-project-3">Code</a>
+            </p>
+          </div>
+          <div class="four columns">
+            <a href="http://whatsupp.s3-website.eu-west-2.amazonaws.com/">
+              <img src="/img/whatsupp.png" alt="" />
+            </a>
+            <p>
+              Whatsapp Sentiment Analysis app
+              <br /><a href="https://github.com/abinocoe/whatsupp">Code</a>
+            </p>
+          </div>
         </div>
-        <div class="four columns">
-          <a href="http://frozen-cliffs-13270.herokuapp.com/">
-            <img src="/img/pleasure.png" alt="" />
-          </a>
-          <p>
-            Google Maps API and web scraping
-            <br />
-            <a href="https://github.com/abinocoe/wdi-project-2">Code</a>
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="four columns offset-by-two">
-          <a href="https://swishlist-cjbrunnen.herokuapp.com/">
-            <img src="/img/swish.png" alt="" />
-          </a>
-          <p>
-            MEAN stack clothes swapping app
-            <br />
-            <a href="https://github.com/cjbrunnen/wdi-project-3">Code</a>
-          </p>
-        </div>
-        <div class="four columns">
-          <a href="https://whatsupp-app.herokuapp.com/">
-          <img src="/img/whatsupp.png" alt="" />
-          </a>
-          <p>
-            Whatsapp Sentiment Analysis app
-            <br /><a href="https://github.com/abinocoe/wdi-project-4">Code</a>
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <ul class="four columns offset-by-four" id="contact">
-        <li><a href="https://github.com/abinocoe"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
-        <li><a href="https://twitter.com/abinocoe"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/abigailcoe"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-        <li><a href="mailto:abigailcoe@gmail.com"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a></li>
-      </ul>
-    </footer>
-  </div>
-</body>
+      </section>
+      <footer>
+        <ul class="four columns offset-by-four" id="contact">
+          <li>
+            <a href="https://github.com/abinocoe"
+              ><i class="fa fa-github-alt" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/abinocoe"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/abigailcoe"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:abigailcoe@gmail.com"
+              ><i class="fa fa-envelope-open-o" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
